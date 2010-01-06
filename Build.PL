@@ -3,6 +3,12 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
+	meta_merge => {
+		resources => {
+			repository => 'http://github.com/ivanwills/Log-Deep',
+		},
+	},
+
 	module_name         => 'Log::Deep',
 	license             => 'perl',
 	dist_author         => 'Ivan Wills <ivan.wills@gmail.com>',
